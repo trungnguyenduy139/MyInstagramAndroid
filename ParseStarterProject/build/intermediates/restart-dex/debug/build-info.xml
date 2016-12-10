@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instant-run
+    abi="x86"
+    api-level="22"
+    density="tvdpi"
+    format="7"
+    timestamp="95392949185593"
+    token="-983332536540217435" >
+
+    <task
+        name="javac"
+        duration="385" />
+    <task
+        name="instant-run-dex"
+        duration="0" />
+    <task
+        name="instant-run-transform"
+        duration="27" />
+    <task
+        name="verifier"
+        duration="1" />
+
+    <artifact
+        location="D:\Android\AndroidStudioProjects2\MyInstagramAndroid\ParseStarterProject\build\intermediates\transforms\dex\debug\folders\1000\5\slice_9\classes.dex"
+        type="DEX" />
+
+    <build timestamp="94767672948549" >
+        <artifact
+            location="D:\Android\AndroidStudioProjects2\MyInstagramAndroid\ParseStarterProject\build\outputs\apk\ParseStarterProject-debug.apk"
+            type="MAIN" />
+    </build>
+    <build timestamp="95392949185593" >
+        <artifact
+            location="D:\Android\AndroidStudioProjects2\MyInstagramAndroid\ParseStarterProject\build\intermediates\transforms\dex\debug\folders\1000\5\slice_9\classes.dex"
+            type="DEX" />
+    </build>
+
+</instant-run>
