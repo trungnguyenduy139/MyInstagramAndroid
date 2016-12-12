@@ -1,3 +1,2 @@
-CHANGED,D:\Android\AndroidStudioProjects2\MyInstagramAndroid\ParseStarterProject\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\parse\starter\UserFeedActivity$1$override.class
-CHANGED,D:\Android\AndroidStudioProjects2\MyInstagramAndroid\ParseStarterProject\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\parse\starter\UserFeedActivity$1$1$override.class
+CHANGED,D:\Android\AndroidStudioProjects2\MyInstagramAndroid\ParseStarterProject\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\parse\starter\UserListActivity$override.class
 CHANGED,D:\Android\AndroidStudioProjects2\MyInstagramAndroid\ParseStarterProject\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\android\tools\fd\runtime\AppPatchesLoaderImpl.class

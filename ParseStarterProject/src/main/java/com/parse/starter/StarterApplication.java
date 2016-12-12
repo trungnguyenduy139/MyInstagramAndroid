@@ -38,4 +38,5 @@ public class StarterApplication extends Application {
         // defaultACL.setPublicReadAccess(true);
         ParseACL.setDefaultACL(defaultACL, true);
     }
+
 }

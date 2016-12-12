@@ -4,32 +4,45 @@
     api-level="22"
     density="tvdpi"
     format="7"
-    timestamp="157789952437061"
+    timestamp="168564808395659"
     token="-983332536540217435" >
 
     <task
         name="javac"
-        duration="306" />
+        duration="390" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="27" />
+        duration="46" />
     <task
         name="verifier"
-        duration="8" />
+        duration="2" />
 
     <artifact
         location="D:\Android\AndroidStudioProjects2\MyInstagramAndroid\ParseStarterProject\build\intermediates\transforms\dex\debug\folders\1000\5\slice_9\classes.dex"
         type="DEX" />
 
-    <build timestamp="157648971066787" >
+    <build timestamp="160865629564731" >
         <artifact
             location="D:\Android\AndroidStudioProjects2\MyInstagramAndroid\ParseStarterProject\build\outputs\apk\ParseStarterProject-debug.apk"
             type="MAIN" />
     </build>
-    <build timestamp="157789952437061" >
+    <build timestamp="162475868209918" >
+        <artifact
+            location="D:\Android\AndroidStudioProjects2\MyInstagramAndroid\ParseStarterProject\build\intermediates\res\resources-debug.ap_"
+            type="RESOURCES" />
+        <artifact
+            location="D:\Android\AndroidStudioProjects2\MyInstagramAndroid\ParseStarterProject\build\intermediates\transforms\dex\debug\folders\1000\5\slice_2\classes.dex"
+            type="DEX" />
+    </build>
+    <build timestamp="168100860553134" >
+        <artifact
+            location="D:\Android\AndroidStudioProjects2\MyInstagramAndroid\ParseStarterProject\build\intermediates\transforms\dex\debug\folders\1000\5\slice_6\classes.dex"
+            type="DEX" />
+    </build>
+    <build timestamp="168564808395659" >
         <artifact
             location="D:\Android\AndroidStudioProjects2\MyInstagramAndroid\ParseStarterProject\build\intermediates\transforms\dex\debug\folders\1000\5\slice_9\classes.dex"
             type="DEX" />

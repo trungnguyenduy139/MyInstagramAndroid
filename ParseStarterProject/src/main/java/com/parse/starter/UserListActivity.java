@@ -87,6 +87,7 @@ public class UserListActivity extends AppCompatActivity {
         if (id == R.id.log_out) {
             ParseUser.logOut();
             Intent i = new Intent(getApplicationContext(), MainActivity.class);
+            i.putExtra("IS_LOGOUT", true);
             startActivity(i);
         }
         if (id == R.id.share_photo) {
@@ -127,5 +128,19 @@ public class UserListActivity extends AppCompatActivity {
                 e.printStackTrace();
             }
         }
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        Log.d(TAG, "onStop Userlist");
+        if(!getIntent().getBooleanExtra("SAVE", false)){
+            ParseUser.logOut();
+        }
+    }
+
+    @Override
+    public void onBackPressed() {
+        // TODO: Do nothing
     }
 }

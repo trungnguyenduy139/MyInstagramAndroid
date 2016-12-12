@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -54,6 +55,7 @@ public class UserFeedActivity extends AppCompatActivity {
                         Log.d(TAG, "before bitmap list " + bitmapList.size());
                         for (ParseObject object : objects) {
                             ParseFile file = (ParseFile) object.get("image");
+                            Log.d(TAG, file.getUrl());
                             file.getDataInBackground(new GetDataCallback() {
                                 @Override
                                 public void done(byte[] data, ParseException e) {

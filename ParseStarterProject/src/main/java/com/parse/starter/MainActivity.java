@@ -35,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
     public static final String TAG = MainActivity.class.getSimpleName();
     public static final String LOG_IN_FRAGMENT = "log_in_fragment";
     public static final String SIGN_UP_FRAGMENT = "sign_up_fragment";
+
     @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -130,5 +131,10 @@ public class MainActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void onBackPressed() {
+        // TODO: Do nothing 
     }
 }
