@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:id="@+id/imageView"
+        android:src="@drawable/insta"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/user_name"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/tvUser"
+        android:layout_gravity="center_horizontal" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etLogInUser"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/password"
+        android:id="@+id/tvPass"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+
+        android:layout_gravity="center_horizontal" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:layout_marginTop="10dp"
+        android:id="@+id/etLogInPass"
+        android:layout_gravity="center_horizontal" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save Login"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/cbSaveLogin"
+        android:checked="false" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log In"
+        android:id="@+id/btLogIn"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center_horizontal" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:id="@+id/imgCreate"
+        android:layout_marginTop="25dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/create_account" />
+
+</LinearLayout>

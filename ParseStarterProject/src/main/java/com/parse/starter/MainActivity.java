@@ -10,17 +10,21 @@ package com.parse.starter;
 
 import android.annotation.TargetApi;
 import android.app.ActivityOptions;
+import android.media.MediaPlayer;
+import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.transition.Slide;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.VideoView;
 
 import com.parse.ParseAnalytics;
 import com.parse.ParseException;
@@ -30,12 +34,16 @@ import com.parse.SignUpCallback;
 import com.parse.starter.fragments.LogInFragment;
 import com.parse.starter.fragments.SignUpFragment;
 
+import java.io.IOException;
+import java.net.URI;
+
 
 public class MainActivity extends AppCompatActivity {
     public static final String TAG = MainActivity.class.getSimpleName();
     public static final String LOG_IN_FRAGMENT = "log_in_fragment";
     public static final String SIGN_UP_FRAGMENT = "sign_up_fragment";
 
+    LogInFragment logInFragment;
     @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -100,10 +108,25 @@ public class MainActivity extends AppCompatActivity {
 //            }
 //        });
 //        ParseAnalytics.trackAppOpenedInBackground(getIntent());
+        Log.d(TAG, "onCreate");
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.hide();
 
+//        VideoView videoView = (VideoView) findViewById(R.id.vvLogin);
+//        Uri uri = Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.nature);
+//        videoView.setVideoURI(uri);
+//        videoView.start();
+//
+//        videoView.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
+//            @Override
+//            public void onPrepared(MediaPlayer mediaPlayer) {
+//                Log.d(TAG, "onPrepared");
+//                mediaPlayer.setLooping(true);
+//            }
+//        });
         LogInFragment save = (LogInFragment) getSupportFragmentManager().findFragmentByTag(LOG_IN_FRAGMENT);
         if (save == null) {
-            LogInFragment logInFragment = new LogInFragment();
+            logInFragment = new LogInFragment();
             FragmentManager fragmentManager = getSupportFragmentManager();
             FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
             fragmentTransaction.add(R.id.mainActivityHolder, logInFragment, LOG_IN_FRAGMENT);
@@ -135,6 +158,10 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        // TODO: Do nothing 
+        if(logInFragment!=null && logInFragment.isVisible()){
+            // TODO: Do nothing
+        }
+        else
+            super.onBackPressed();
     }
 }

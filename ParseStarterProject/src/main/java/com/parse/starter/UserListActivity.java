@@ -14,6 +14,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.parse.FindCallback;
 import com.parse.Parse;
@@ -133,7 +134,7 @@ public class UserListActivity extends AppCompatActivity {
     @Override
     protected void onStop() {
         super.onStop();
-        Log.d(TAG, "onStop Userlist");
+        Log.d(TAG, "onStop - UserListActivity");
         if(!getIntent().getBooleanExtra("SAVE", false)){
             ParseUser.logOut();
         }
@@ -141,6 +142,6 @@ public class UserListActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        // TODO: Do nothing
+        Toast.makeText(UserListActivity.this, "You need login out", Toast.LENGTH_SHORT).show();
     }
 }

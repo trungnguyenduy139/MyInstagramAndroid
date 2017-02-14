@@ -35,7 +35,7 @@ public class UserFeedActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_feed);
-        Log.d(TAG, "onCreate UserFeedActivity");
+        Log.d(TAG, "onCreate - UserFeedActivity");
         lvUserFeed = (ListView) findViewById(R.id.lvUserFeed);
         bitmapList = new ArrayList<Bitmap>();
         final FeedAdapter adapter = new FeedAdapter(this, R.layout.feed_item, bitmapList);
